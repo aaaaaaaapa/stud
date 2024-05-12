@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js" defer></script>
+    <script type="module" src="./form.js" defer></script>
+    <script type="module" src="./table.js" defer></script>
+    <script type="module" src="./sort.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form class="student-form" id="students">
+            <h2 class="form-title">Добавить нового студента</h2>
+            <div class="row">
+                <label for="first">Имя:</label>
+                <input type="text" name="first" id="first" required>
+                <label for="last">Фамилия:</label>
+                <input type="text" name="last" id="last" required>
+                <label for="patronymic">Отчество:</label>
+                <input type="text" name="patronymic" id="patronymic" required>
+            </div>
+            <div class="row">
+                <label for="birth">Дата рождения:</label>
+                <input type="date" name="birth" id="birth" required>
+                <label for="year">Год начала обучения:</label>
+                <input type="number" name="year" id="year" required>
+                <label for="facult">Факультет:</label>
+                <input type="text" name="facult" id="facult" required>
+            </div>
+            <div class="row">
+                <button class="btn" type="submit" id="stud-btn">
+                    Добавить студента
+                </button>
+            </div>
+        </form>
+
+        <div id="filters">
+
+            <h2 class="form-title">Фильтрация по:</h2>
+
+            <div class="row-filt">
+                <label for="filter-name">ФИО:</label>
+                <input type="text" id="filter-name">
+            </div>
+            <div class="row-filt">
+                <label for="filter-facult">Факультету:</label>
+                <input type="text" id="filter-facult">
+            </div>
+            <div class="row-filt">
+                <label for="start-year">По году начала обучения:</label>
+                <input type="number" id="start-year">
+            </div>
+            <div class="row-filt">
+                <label for="end-year">По году окончания обучения:</label>
+                <input type="number" id="end-year">
+            </div>
+            
+        </div>
+    
+        <table class="student-table">
+            <thead id="table-head">
+                <tr>
+                    <th id="fio">ФИО студента</th>
+                    <th id="faculty">Факультет</th>
+                    <th id="brth">Дата рождения и возраст</th>
+                    <th id="stud-year">Годы обучения</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
