@@ -19,15 +19,6 @@ let students = [
         birthdate: new Date(),
         startYear: 2020,
         faculty: 'Факультет'
-    },
-
-    {
-        firstName: 'Хуй',
-        lastName: 'Пизда',
-        patronymic: 'Залупа',
-        birthdate: new Date('2020-01-02'),
-        startYear: 2021,
-        faculty: 'АХуетет'
     }
 
 ];
